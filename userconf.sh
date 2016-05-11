@@ -3,10 +3,10 @@
 ## Set defaults for environmental variables in case they are undefined
 USER=${USER:=rstudio}
 PASSWORD=${PASSWORD:=rstudio}
-USERID=${USERID:=1000}
+USERID=${USERID:=100}
 ROOT=${ROOT:=FALSE}
 
-if [ "$USERID" -ne 1000 ]
+if [ "$USERID" -ne 100 ]
 ## Configure user with a different USERID if requested.
 	then
 		echo "creating new $USER with UID $USERID"
