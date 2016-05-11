@@ -1,4 +1,4 @@
-# mobivi/rstudio-server
+# mobivi/rstudioserver
 
 Rstudio-server on Docker container with statistic packages:
 
