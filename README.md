@@ -41,7 +41,7 @@ sudo docker run -d -p 8787:8787 mobivi/rstudioserver
 From now on, you can start using Rstudio-server via web address
 
 ```
-http://localhost:8787
+localhost:8787
 ```
 
 Or, just in case you are using Docker Toolbox on Windows/Mac, run:
@@ -61,3 +61,6 @@ to retrieve your local or remote machine IP (for example: 192.168.99.100), then 
 
 * username: rstudio
 * password: rstudio
+
+### Additional notes ###
+Happy coding ;)
