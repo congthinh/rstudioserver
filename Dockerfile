@@ -82,6 +82,16 @@ sqldf \
 mondate \
 stringr
 
+# Config rserver.conf 05/12/2016
+RUN rserverconf="/etc/rstudio/rserver.conf"
+RUN if [ -f "$rserverconf" ]; then mv "$rserverconf" "${rserverconf}.bak"; fi
+RUN echo "www-address=127.0.0.1" >> "$rserverconf"
+
+# Config rsession.conf
+RUN rsessionconf="/etc/rstudio/rsession.conf"
+RUN if [ -f "$rsessionconf" ]; then mv "$rsessionconf" "${rsessionconf}.bak"; fi
+RUN echo "r-libs-user=~/R/%p-library/%v" >> "$rsessionconf"
+
 #Add rstudio/rstudio username/password
 RUN usermod -l rstudio docker \ 
 && usermod -m -d /home/rstudio rstudio \ 
