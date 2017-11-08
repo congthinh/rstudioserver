@@ -3,7 +3,7 @@
 # May 2016
 ## Based on r-base
 FROM r-base:latest 
-MAINTAINER Thinh Huynh "thinh.hc@mobivi.vn"
+MAINTAINER Thinh Huynh "thinhhc@gmail.com"
 
 ## Add RStudio binaries to PATH 
 ENV PATH /usr/lib/rstudio-server/bin/:$PATH 
